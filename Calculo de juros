@@ -1,0 +1,50 @@
+//Entradas:
+var qtParcelas , valorFinanciado;
+
+//Saidas:
+var valorParcela , totalAPagar, juros;
+
+
+//****************************************************************************
+//Opção de financiamento sem juros:
+
+
+valorFinanciado = Number (prompt("Digite o valor financiado: "));
+qtParcelas = Number (prompt("Digite em quantas vezes você deseja fazer: "));
+
+
+//Calculo do valorParcela:
+valorParcela = valorFinanciado / qtParcelas;
+
+//Calculo total a pagar:
+totalAPagar = valorParcela * qtParcelas;
+
+//Mensagem:
+console.log(`O valor mensal será de: R$${valorParcela}.
+O total a pagar no final do financiamento será de: R$${totalAPagar}.`);
+
+
+//****************************************************************************
+
+
+
+//****************************************************************************
+//Opção de financiamento com 1% ao mês:
+valorParcela = valorFinanciado * qtParcelas;
+
+juros = valorParcela / 100;
+valorParcela = valorParcela + juros;
+
+totalAPagar = valorParcela * qtParcelas
+
+//Calculo total a pagar:
+totalAPagar = valorParcela * qtParcelas;
+
+//Mensagen:
+
+console.log(`Para financiamento com juros simples de 1% ao mês: 
+O valor da parcela é: R$${valorParcela}.
+O total a pagar no final do financiamento é: R$${totalAPagar}.`)
+
+//***************************************************************************** */
+
